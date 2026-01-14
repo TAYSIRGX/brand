@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand Clothing | تفاصيل المنتج</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+<body class="theme-dark page-enter" data-page="product">
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" style="font-family: 'Montserrat', sans-serif; font-size: 24px; display: flex; align-items: center; gap: 10px;">
+      <img src="assets/img/logo.svg" alt="Brand" style="height:26px; width:26px;">
+      BRAND
+    </a>
+    <nav class="nav">
+      <a href="products.html" class="nav-link smooth-link" data-i18n="nav_products">المنتجات</a>
+    </nav>
+    <div class="auth-cta">
+      <button class="btn btn-ghost menu-toggle" id="menuToggle">☰</button>
+      <a href="cart.html" class="nav-icon-btn smooth-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="badge" id="cartCount">0</span>
+      </a>
+      <button class="btn btn-ghost" id="langToggle">EN</button>
+      <a href="login.html" class="btn btn-ghost smooth-link" id="nav-auth" data-i18n="nav_login">دخول</a>
+    </div>
+  </div>
+</header>
+
+<main class="container product-container">
+  <div class="product-gallery">
+    <div class="product-main" id="productMain" style="background-image: url('https://images.unsplash.com/photo-1551028919-ac6635f0e5c9?q=80&w=800&auto=format&fit=crop')"></div>
+    <div class="thumbs">
+      <button class="thumb" style="background-image: url('https://images.unsplash.com/photo-1551028919-ac6635f0e5c9?q=80&w=200&auto=format&fit=crop')" data-src="https://images.unsplash.com/photo-1551028919-ac6635f0e5c9?q=80&w=800&auto=format&fit=crop"></button>
+      <button class="thumb" style="background-image: url('https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=200&auto=format&fit=crop')" data-src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=800&auto=format&fit=crop"></button>
+      <button class="thumb" style="background-image: url('https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=200&auto=format&fit=crop')" data-src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=800&auto=format&fit=crop"></button>
+    </div>
+  </div>
+  <div class="product-info">
+    <h1 class="product-title" data-i18n="product_title">جاكيت جلد فاخر</h1>
+    <div class="price">1,299 ج.م</div>
+    <p class="description" data-i18n="product_desc">جاكيت جلد عالي الجودة بتفاصيل دقيقة ولمسات حديثة، مناسب للإطلالات الرسمية والكاجوال ويعكس هوية فاخرة راقية.</p>
+    <div class="options">
+      <label class="label" data-i18n="size_label">المقاس</label>
+      <select class="select" id="sizeSelect">
+        <option>XS</option>
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+    </div>
+    <div class="actions" style="display: flex; gap: 10px; flex-wrap: wrap;">
+      <button class="btn btn-outline" id="addToCart" style="flex: 1;" data-i18n="add_to_cart">أضف إلى السلة</button>
+      <button class="btn btn-primary" id="buyNow" style="flex: 1;" data-i18n="buy_now">شراء الآن</button>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>© 2026 Brand Clothing</div>
+    <div class="social">
+      <span class="dot dot-neon"></span>
+      <span class="dot dot-gold"></span>
+      <span class="dot dot-silver"></span>
+    </div>
+    <div class="payments">
+      <div class="payments-title" data-i18n="payments_title">طرق الدفع</div>
+      <div class="payments-list">
+        <span class="pay" data-i18n="pay_visa">Visa</span>
+        <span class="pay" data-i18n="pay_cod">الدفع عند الاستلام</span>
+        <span class="pay" data-i18n="pay_vodafone_cash">فودافون كاش</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="toast"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brand Clothing |Brand Clothing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+<body class="theme-dark page-enter" data-page="home">
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" style="font-family: 'Montserrat', sans-serif; font-size: 24px; display: flex; align-items: center; gap: 10px;">
+      <img src="assets/img/logo.svg" alt="Brand" style="height:26px; width:26px;">
+      BRAND
+    </a>
+    <nav class="nav">
+      <a href="products.html" class="nav-link smooth-link" data-i18n="nav_products">المنتجات</a>
+      <a href="products.html#men" class="nav-link smooth-link" data-i18n="nav_men">رجالي</a>
+      <a href="products.html#women" class="nav-link smooth-link" data-i18n="nav_women">نسائي</a>
+      <a href="products.html#accessories" class="nav-link smooth-link" data-i18n="nav_accessories">إكسسوارات</a>
+      <a href="orders.html" class="nav-link smooth-link" id="nav-orders" data-i18n="nav_orders">الطلبات</a>
+    </nav>
+    <div class="auth-cta">
+      <button class="btn btn-ghost menu-toggle" id="menuToggle">☰</button>
+      <a href="cart.html" class="nav-icon-btn smooth-link">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="badge" id="cartCount">0</span>
+      </a>
+      <button class="btn btn-ghost" id="langToggle">EN</button>
+      <a href="login.html" class="btn btn-ghost smooth-link" id="nav-auth" data-i18n="nav_login">دخول</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1 class="display" data-i18n="hero_title">فخامة ترتديها، هوية تعكسك</h1>
+        <p class="lead" data-i18n="hero_lead">براند عالمي بلمسات حديثة، تجربة راقية وتصميمات عالية الجودة.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="btn btn-primary smooth-link" data-i18n="hero_shop_now">تسوّق الآن</a>
+          <a href="signup.html" class="btn btn-outline smooth-link" data-i18n="hero_signup">أنشئ حسابًا</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="card-visual">
+          <div class="visual-img" style="background: radial-gradient(circle, #222, #000);">
+            <div class="anim-logo">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="visual-info">
+            <div class="title">BRAND</div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured">
+    <div class="container">
+      <h2 class="section-title" data-i18n="featured_title">مختاراتنا</h2>
+      <div class="grid cards">
+        <a class="card product-card smooth-link" href="product.html">
+          <div class="card-media" style="background-image: url('https://images.unsplash.com/photo-1551028919-ac6635f0e5c9?q=80&w=600&auto=format&fit=crop')"></div>
+          <div class="card-body">
+            <div class="card-title">جاكيت جلد فاخر</div>
+            <div class="card-meta">1,299 ج.م</div>
+          </div>
+        </a>
+        <a class="card product-card smooth-link" href="product.html">
+          <div class="card-media" style="background-image: url('https://images.unsplash.com/photo-1566174053879-31528523f8ae?q=80&w=600&auto=format&fit=crop')"></div>
+          <div class="card-body">
+            <div class="card-title">فستان سهرة أنيق</div>
+            <div class="card-meta">1,899 ج.م</div>
+          </div>
+        </a>
+        <a class="card product-card smooth-link" href="product.html">
+          <div class="card-media" style="background-image: url('https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=600&auto=format&fit=crop')"></div>
+          <div class="card-body">
+            <div class="card-title">ساعة معدنية راقية</div>
+            <div class="card-meta">2,499 ج.م</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>© 2026 Brand Clothing</div>
+    <div class="social">
+      <span class="dot dot-neon"></span>
+      <span class="dot dot-gold"></span>
+      <span class="dot dot-silver"></span>
+    </div>
+    <div class="payments">
+      <div class="payments-title" data-i18n="payments_title">طرق الدفع</div>
+      <div class="payments-list">
+        <span class="pay" data-i18n="pay_visa">Visa</span>
+        <span class="pay" data-i18n="pay_cod">الدفع عند الاستلام</span>
+        <span class="pay" data-i18n="pay_vodafone_cash">فودافون كاش</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="toast"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
